@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 
-body {
+body,
+html {
 
     font-family: 'Labrada', serif;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -37,7 +39,7 @@ img {
     gap: 0.5rem;
 
     background: blueviolet;
-    color: #ffff;
+    color: white;
     padding: 0.8rem 1, 5rem;
 
     border: none;
@@ -172,6 +174,82 @@ header .navlogo span {
     background: white;
     color: #7700ff;
 
+}
+
+.about .Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.content h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.about .Container h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+@media screen and(max-width: 768px) {
+    .about .image {
+        display: none;
+    }
+}
+
+.skills .Container {
+    display: grid;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: auto;
+
+}
+
+.skills h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    border-bottom: 5px solid #7700ff;
+    width: fit-content;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+.skills .skills-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem 2rem;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.skills .skills-wrapper span {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+
+}
+
+.skills .skills.wrapper i {
+    font-size: 0.5rem;
+
+}
+
+media screen and (max-width: 760px) {
+    .skills .skills-wrapper span {
+        font-size: 1.5rem;
+    }
 }
 
 /*1200px simple laptop
